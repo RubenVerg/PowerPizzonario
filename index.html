@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pizzonario</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!-- Si può tranquillamente cambiare font, ma non saprei quale usare-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<!--Incorporamento (?) delle icone carine, usare https://fontawesome.com/icons come reference-->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="CSS/style.css">
+</head>
+	
+<body>
+
+<!-- Navbar (In cima alla paige) -->
+<div class="w3-top">
+<!-- Navbar su schermi normali-->
+	<div class="w3-bar" id="myNavbar">
+		<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+		  <i class="fa fa-bars"></i>
+		</a>
+		<a href="#home" class="w3-bar-item w3-button">INTRO</a>
+		<a href="Pagine/Nickzionario.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> NICKZIONARIO</a>
+		<a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> LORRONARIO</a>
+		<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> DISIONARIO</a>
+		<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CREDITS</a>
+		<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+		  <i class="fa fa-search"></i>
+		</a>
+	</div>
+
+	<!-- Navbar su schermi piccolini -->
+	<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+		<a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">INTRO</a>
+		<a href="Pagine/Nickzionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()">NICKZIONARIO</a>
+		<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">LORRONARIO</a>
+		<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">DISIONARIO</a>
+		<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CREDITS</a>
+		<a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- Immagine Parallax (quelle in background con il testo davanti)  -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+	<!-- La classe che prende l'immagine è bgimg-1. Per cambiare l'immagine andare nel CSS-->
+	<div class="w3-display-middle" style="white-space:nowrap;">
+		<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">IL <span class="w3-hide-small">POWER </span> PIZZONARIO </span>
+	</div>
+</div>
+
+<!-- Container (Sezione della Selezione) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+	<h3 class="w3-center">CIAO!</h3>
+	<p class="w3-center"><em>Benvenutз a tuttз!</em></p>
+	<p>Ecco a voi il Powerpizzonario, il famoso dizionario che include anche il Nickzionario, una raccolta di neologismi coniati nel corso delle puntate del Power Pizza Podcast. Come i suoi predecessori
+	(il Bernardi Inverecondito e il Nickzionario), il Powerpizzionario è in uso nelle migliori scuole di dislessia. Questa versione del Powerpizzonario include anche le parole che non si trovano negli scontrini,
+	e delle Nikquotes</p>
+	
+	<!--Le immagini sono da rifare, pensavo di fare dei bottoni rettangolari, piuttosto che dei quadratoni-->
+	
+	<div class="w3-row">
+		<div class="w3-col m6 w3-center w3-padding-large w3-display-container">
+			<a href="Pagine/Nickzionario.html">
+			<img src="Immagini/Nick.png" class="w3-round w3-image w3-opacity" alt="Nickckk" width="500" height="150">
+			<div class="w3-display-middle w3-large"><b>Il Nickzionario</b></div>
+			</a>
+		</div>
+	
+		<div class="w3-col m6 w3-center w3-padding-large w3-display-container">
+			<a href="Pagine/Lorronario.html">
+			<img src="Immagini/SuperDoge.jpg" class="w3-round w3-image w3-opacity" alt="Nickckk" width="500" height="150">
+			<div class="w3-display-middle w3-large"><b>Lorronario</b></div>
+			</a>
+		</div>
+	</div>
+	
+	<div class="w3-row">
+		<div class="w3-col m6 w3-center w3-padding-large w3-display-container">
+			<a href="Pagine/DiSionario.html">
+			<img src="Immagini/Nick.png" class="w3-round w3-image w3-opacity" alt="Nickckk" width="500" height="150">
+			<div class="w3-display-middle w3-large"><b>DiSionario</b></div>
+			</a>
+		</div>
+	
+		<div class="w3-col m6 w3-center w3-padding-large w3-display-container">
+			<a href="Pagine/TheZionario.html">
+			<img src="Immagini/SuperDoge.jpg" class="w3-round w3-image w3-opacity" alt="Nickckk" width="500" height="150">
+			<div class="w3-display-middle w3-large"><b>The_zionario</b></div>
+			</a>
+		</div>
+	</div>
+</div>
+
+<!-- To do: un bottone/qualcosa per le nick quotes-->
+<!-- spoiler per i contribuenti alla repository: Pensavo di aggiungere una sezione per le pizze dei vari episodi...-->
+
+<!-- Statistiche -->
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">7+</span><br>
+    Ospiti
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">42+</span><br>
+    Voci
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">200+</span><br>
+    Happy Patreons
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">121+</span><br>
+    Puntate
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 ">
+	<!-- Bottone per tornare in cima-->
+	<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Torna in Cina</a> 
+	<div class="w3-xlarge w3-section w3-text-sand"> 
+	<!--I don't like sand, it's course and irritating-->
+		<i>Puoi trovare Power Pizza Podcast ai seguenti link: </i>
+		<br>
+		<!-- Le icone sono link ai vari siti-->
+		<a href="https://www.spreaker.com/show/power-pizza"><i class="fa fa-microphone-alt w3-hover-opacity"></i></a>
+		<a href="https://www.instagram.com/powerpizzapodcask111222333/?hl=it"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+		<a href="http://www.datecideisoldi.com"><i class="fab fa-patreon w3-hover-opacity"></i></a>
+		<a href="http://powerpizza.stream"><i class="fab fa-twitch w3-hover-opacity"></i></a>
+		<a href="https://www.youtube.com/user/scottecs2"><i class="fab fa-youtube w3-hover-opacity"></i></a>
+	</div>
+</footer>
+ 
+<script src="Scripts/script_base.js"></script>
+
+</body>
+</html>
