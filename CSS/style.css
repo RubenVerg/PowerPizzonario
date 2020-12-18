@@ -15,7 +15,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('http://www.w3schools.com/w3images/parallax1.jpg');
+  background-image: url('../Immagini/Banner.png');
   min-height: 100%;
 }
 
