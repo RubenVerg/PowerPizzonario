@@ -22,12 +22,9 @@ body, html{
 
 /*Stile bottone Nickquotes*/
 .btnNickquotes{
-  /* font-family: "Aguafina Script";
-  
-  */
   font-family: 'Brush Script MT', cursive;
-  letter-spacing: 7px; 
-  font-size: 50px;  
+  letter-spacing: 10px; 
+  font-size: 35px;  
 }
 
 /* Centered text on image*/
