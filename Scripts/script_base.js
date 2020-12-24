@@ -18,3 +18,12 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+function apriNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function chiudiNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
