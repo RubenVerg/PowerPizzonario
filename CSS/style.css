@@ -1,25 +1,39 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-
-body, html{
-	height: 100%;
-	color: #777;
-	line-height: 1.8;
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
 }
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-	background-image: url('../Immagini/Banner.png');
-	min-height: 65%;
-	background-position: center;
-	background-size: cover;
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
 }
 
-/*Stile bottone Nickquotes*/
-.btnNickquotes{
+/* Immagini Iniziali (Logo. Full height) */
+.bgimg-banner {
+  background-image: url('../Immagini/Banner.png');
+  min-height: 65%;
+  background-position: center;
+  background-size: cover;
+}
+
+.bgimg-Nickquotes {
+  background-image: url('../Immagini/Candela.jpg');
+  min-height: 65%;
+  background-position: center;
+  background-size: cover;
+}
+
+/*
+___________________________________
+Stile Nickquotes
+___________________________________
+Bottone Nickquotes*/
+.stileNickquotes {
   font-family: 'Brush Script MT', cursive;
   letter-spacing: 10px;
   font-size: 35px;
 }
+
 
 /*Centered text on image*/
 .centeredImage {
@@ -31,36 +45,17 @@ body, html{
 
 /*Immagine laterale per i credits*/
 .sideImage {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: url("../Immagini/VerticalPizza.jpg");
-	min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../Immagini/VerticalPizza.jpg");
+  min-height: 100%;
 }
 
-/**/
-.{
-  font-weight: 700;
-
-  {
-    font-weight: 300;
-    font-size: 12px;
-  }
+.w3-wide {
+  letter-spacing: 10px;
 }
 
-dd {
-  line-height: 1.625;
-  margin-left: 0;
-  margin-bottom: 20px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
+.w3-hover-opacity {
+  cursor: pointer;
 }

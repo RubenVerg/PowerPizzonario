@@ -11,25 +11,29 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Aguafina Script'>
   <!--Incorporamento (?) delle icone carine, usare https://fontawesome.com/icons come reference-->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!--Libreria per lo script dei dati dal file sheet per javascript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+  <script src="../Scripts/script_base.js"></script>
   <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
-    <div class="w3-bar" id="myNavbar">
+    <!-- Navbar su schermi normali-->
+    <div class="w3-bar w3-black" id="myNavbar">
       <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
       </a>
-      <a href="../index.html" class="w3-bar-item w3-button">HOME</a>
-      <a href="Nickzionario.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> NICKZIONARIO</a>
-      <a href="Vocabolorro.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> VOCABOLORRO</a>
-      <a href="Disionario.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> DISIONARIO</a>
-      <a href="Credits.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CREDITS</a>
+      <a href="../index.html" class="w3-bar-item w3-button"><i class="fas fa-home"></i> HOME</a>
+      <a href="Nickzionario.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-camera"></i> NICKZIONARIO</a>
+      <a href="Vocabolorro.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-gamepad"></i> VOCABOLORRO</a>
+      <a href="Disionario.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-dog"></i> DISIONARIO</a>
+      <a href="Credits.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-scroll"></i> CREDITS</a>
     </div>
 
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <!-- Navbar su schermi piccolini -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-text-white">
       <a href="../index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
       <a href="Nickzionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()">NICKZIONARIO</a>
       <a href="VocaboLorro.html" class="w3-bar-item w3-button" onclick="toggleFunction()">VOCABOLORRO</a>
@@ -39,9 +43,11 @@
   </div>
 
   <!--Immagine all'inizio della pagina-->
-  <header class="bgimg-1 w3-display-container w3-wide  w3-opacity-min">
-	  <div class="w3-display-middle" style="white-space:nowrap;">
-			<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">IL <span class="w3-hide-small">POWER </span> PIZZONARIO </span>
+  <header class="bgimg-Nickquotes w3-display-container w3-wide" id="inizio">
+	  <div class="w3-display-left stileNickquotes">
+			<span class="center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-text-yellow">
+        <span style="font-size: 40px;"> LE NICKQUOTES</span>
+      </span>
 		</div>
 	</header>
 
@@ -55,31 +61,40 @@
     <!-- TO DO-->
     <div class="w3-row">
       <div class="w3-col m6 w3-center w3-padding-large w3-display-container">
-        <button type="button" name="button">Vedi Tutte le voci</button>
+        <button  class="w3-button w3-round-large w3-teal" onclick="SceltaTutte()" id="btnvoci">Vedi Tutte le voci</button>
       </div>
 
       <div class="w3-col m6 w3-center w3-padding-large w3-display-container">
-        <button type="button" name="button">Quote a random</button>
+        <button class="w3-button w3-round-large w3-teal" onclick="SceltaRandom()" id="btnrandom">Beccati una Quote random</button>
       </div>
     </div>
 
-      <table>
-        <!-- -->
-      <tbody
-            data-sheetdb-url="https://sheetdb.io/api/v1/5wbjaopomco9u"
-            data-sheetdb-sheet="Nickquotes">
-        <tr>
-          <td>{{NICKQUOTE}}</td>
-          <td>{{ORIGINE}}</td>
-        </tr>
-      </tbody>
+    <!--Tabella per la stampa delle Nickquotes-->
+    <div id="stampaNickquotes">
+      <table class="w3-table">
+        <tbody
+        data-sheetdb-url='https://sheetdb.io/api/v1/5wbjaopomco9u'
+        data-sheetdb-sheet='Nickquotes'>
+          <tr>
+            <td>{{NICKQUOTE}}</td>
+            <td>{{ORIGINE}}</td>
+          </tr>
+        </tbody>
       </table>
+    </div>
+
+    <!--Sezione Nickquote Random-->
+    <div id="randomNickquotes">
+      <!-- Trovare un template per la quote random.
+      Inoltre, trovare il modo per prendere una quote random (ricerca per l'ID ma randomico? chissà)
+      -->
+    </div>
   </div>
 
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-64">
     <!-- Bottone per tornare in cima-->
-    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Torna in Cina</a>
+    <a href="#inizio" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Torna in Cina</a>
     <div class="w3-xlarge w3-section w3-text-sand">
       <!--I don't like sand, it's course and irritating-->
       <i>Puoi trovare Power Pizza Podcast ai seguenti link: </i>
@@ -94,7 +109,6 @@
     <p class=""> Disclaimer: Non sono il proprietario di nessuna delle immagini utilizzate in questo sito, tutti i credits vanno a <a href="https://www.instagram.com/instasio/?hl=it">Sio</a> </p>
   </footer>
 
-  <script src="../Scripts/script_base.js"></script>
   <script src="https://sheetdb.io/handlebars.js"></script>
 </body>
 
