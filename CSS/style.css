@@ -8,7 +8,9 @@ body, html {
   line-height: 1.8;
 }
 
-/* Immagini Iniziali (Logo. Full height) */
+/*
+___________________________________________
+Immagini Iniziali (Logo. Full height) */
 .bgimg-banner {
   background-image: url('../Immagini/Banner.png');
   min-height: 65%;
@@ -24,14 +26,16 @@ body, html {
 }
 
 /*
-___________________________________
-Stile Nickquotes
-___________________________________
-Bottone Nickquotes*/
+___________________________________________
+Stile nella pagina Nickquotes*/
 .stileNickquotes {
   font-family: 'Brush Script MT', cursive;
   letter-spacing: 10px;
   font-size: 35px;
+}
+
+.coloresfondo{
+  background: #1D1F20;
 }
 
 

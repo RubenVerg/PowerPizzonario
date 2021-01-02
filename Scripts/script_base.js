@@ -29,18 +29,59 @@ function chiudiNav() {
   document.getElementById("mySidebar").style.display = "none";
 }
 
-//Bottoni Nickquotes
-function SceltaRandom()
-{
-  alert("ciaone randome");
-}
-
+// Bottone per tutte le Nickquotes
 function SceltaTutte()
 {
   var tabellaQuote = document.getElementById('stampaNickquotes');
-  if (tabellaQuote.style.display === 'none') {
+  var btnAllQuote = document.getElementById('btnvoci');
+
+  if (tabellaQuote.style.display === 'none'){
+    // Cambia il testo del bottone
+    btnAllQuote.innerHTML = "Nascondi pure tutte le quotes";
+    // Mostra la tabella delle quotes
     tabellaQuote.style.display = 'block';
   } else {
+    // Cambia il testo del bottone
+    btnAllQuote.innerHTML = "Sbircia tutte le voci!";
+    // Nasconde la tabella delle quotes
     tabellaQuote.style.display = 'none';
+  }
+}
+
+// Bottone per la Nickquote randomica
+function SceltaRandom()
+{
+  var randomQuote = document.getElementById('randomNickquotes');
+  var btnRandomQuote = document.getElementById('btnrandom');
+  var numQuotes = 69;   //Modificare questa a seconda di quante quotes ci sono
+
+  //Controllo per mostrare o nascondere la sezione della quote
+  if (randomQuote.style.display === 'none')
+  {
+    // Se il div è nascosto, allora fa tutto il processo per generare l'URL nuovo
+    // per l'estrapolazione della quote
+    // Dichiarazioni delle variabili
+    var quoteScelta = Math.floor((Math.random() * numQuotes)+1);
+
+    // Variabile per l'id della quote da mostrare
+    var stringaUrl = "?ID=";
+    stringaUrl += quoteScelta;
+
+    // Genera un nuovo URL
+    var nuovoUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + stringaUrl;
+    window.history.replaceState(null , null , nuovoUrl);
+
+    // Cambia il testo del bottone
+    btnRandomQuote.innerHTML = "Nascondi la Nickquote!";
+    // Mostra la quote random
+    randomQuote.style.display = 'block';
+
+    location.reload();
+  }
+  else{
+    // Cambia il testo del bottone
+    btnRandomQuote.innerHTML = "Beccati una quote random!";
+    // Nasconde la quote random
+    randomQuote.style.display = 'none';
   }
 }

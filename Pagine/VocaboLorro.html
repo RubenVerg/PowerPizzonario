@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Nickquotes</title>
+  <title>Nickzionario</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,17 +10,15 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Aguafina Script'>
   <!--Incorporamento (?) delle icone carine, usare https://fontawesome.com/icons come reference-->
-  <link rel="stylesheet" href="../CSS/style.css">
-  <link rel="stylesheet" href="../CSS/style_quotes_2.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script type="text/javascript" src="../Scripts/script_base.js"></script>
+  <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
+
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
-    <!-- Navbar su schermi normali-->
-    <div class="w3-bar w3-black" id="myNavbar">
+    <div class="w3-bar" id="myNavbar">
       <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
       </a>
@@ -32,10 +30,10 @@
       <a href="Credits.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-scroll"></i> CREDITS</a>
     </div>
 
-    <!-- Navbar su schermi piccolini -->
-    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-text-white">
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
       <a href="../index.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> HOME</a>
-      <a href="Nickzionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> NICKZIONARIO</a>
+      <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()"> NICKZIONARIO</a>
       <a href="VocaboLorro.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> VOCABOLORRO</a>
       <a href="DiSionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> DISIONARIO</a>
       <a href="TheZionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> THE_ZIONARIO</a>
@@ -44,71 +42,38 @@
   </div>
 
   <!--Immagine all'inizio della pagina-->
-  <header class="bgimg-Nickquotes w3-display-container w3-wide" id="inizio">
-	  <div class="w3-display-left stileNickquotes">
-			<span class="center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-text-yellow">
-        <span style="font-size: 40px;"> LE NICKQUOTES</span>
-      </span>
+  <header class="bgimg-banner w3-display-container w3-wide w3-opacity-min" id="inizio">
+	  <div class="w3-display-middle" style="white-space:nowrap;">
+			<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">IL </span> VOCABOLORRO </span>
 		</div>
 	</header>
 
   <!-- Container (Sezione della Selezione) -->
-  <div class="w3-container w3-padding-32 coloresfondo">
-    <h3 class="w3-center">Le Nickquotes</h3>
+  <div class="w3-content w3-container w3-padding-32" id="about">
+    <h3 class="w3-center">CIAO LORRO, A COSA GIOCHI?</h3>
     <p class="w3-center"><em>Benvenutз a tuttз!</em></p>
+    <p>Siete planati nella sezione del VocaboLorro! Qui troverete tutte (o quasi) le definizioni relative a ciò che dice il nostro caro Lorro</p>
 
-    <div class="w3-row">
-      <!-- Bottone per la visualizzazione di tutte le quotes/random -->
-      <div class="w3-col m6 w3-center w3-padding-large w3-display-container">
-        <button class="w3-button w3-round-large w3-teal" onclick="SceltaTutte()" id="btnvoci">
-          Sbircia tutte le voci!
-        </button>
-      </div>
-
-      <!-- Bottone per la ricerca randomica di una quote -->
-      <div class="w3-col m6 w3-center w3-padding-large w3-display-container">
-        <button class="w3-button w3-round-large w3-teal" onclick="SceltaRandom()" id="btnrandom">
-          Beccati una quote random!
-        </button>
-      </div>
-    </div>
-
-    <!--Tabella per la stampa di tutte le Nickquotes-->
-    <div id="stampaNickquotes" style="display:none;">
-      <table class="w3-table">
-        <tbody
-        data-sheetdb-url='https://sheetdb.io/api/v1/5wbjaopomco9u'
-        data-sheetdb-sheet='Nickquotes'>
-          <tr>
-            <td>{{NICKQUOTE}}</td>
-            <td><i>{{ORIGINE}}</i></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!--Sezione Nickquote Random-->
-    <!-- TO DO  -->
-    <div id="randomNickquotes" style="display:none;" class="w3-card-4">
-      <div
-      data-sheetdb-url="https://sheetdb.io/api/v1/5wbjaopomco9u"
-      data-sheetdb-sheet='Nickquotes'
-      data-sheetdb-query-string="ID">
-        <div class="w3-panel w3-leftbar w3-center style="width:50%"">
-          <h1>
-            {{NICKQUOTE}}
-           </h1>
-        </div>
-        <div class="w3-container w3-center" style="font-family: 'Brush Script MT', cursive;">
-          <h4><em>&mdash;{{ORIGINE}}</em></h4>
-        </div>
-      </div>
-    </div>
-    <br>
+    <!--Prende i dati dal file sheet e li mette in una tabella-->
+    <table data-sheetdb-url="https://sheetdb.io/api/v1/5wbjaopomco9u"
+    data-sheetdb-sheet="VocaboLorro" style="font-size: 18px">
+    <!--Verificare come distinguere la Lettera della sezione dal resto,
+    in modo da farla più grande/non lasciare tutto lo spazio sotto -->
+      <tr>
+        <td>
+          <b style="font-size: 20px">{{LEMMI}}</b>
+          <i style="font-size: 15px"> - {{SIGLA}}</i><br>
+          {{DEFINIZIONE}}<br>
+        </td>
+        <td>
+          <i style="font-size: 16px"><br>{{ORIGINE}}</i>
+        </td>
+      </tr>
+    </table>
   </div>
 
   <!-- Footer -->
-  <footer class="w3-center w3-black w3-padding-32">
+  <footer class="w3-center w3-black w3-padding-32 ">
     <!-- Bottone per tornare in cima-->
     <a href="#inizio" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Torna in Cina</a>
     <div class="w3-xlarge w3-section w3-text-sand">
@@ -122,11 +87,11 @@
       <a href="http://powerpizza.stream"><i class="fab fa-twitch w3-hover-opacity"></i></a>
       <a href="https://www.youtube.com/user/scottecs2"><i class="fab fa-youtube w3-hover-opacity"></i></a>
     </div>
-    <p class=""> Disclaimer: Non sono il proprietario di nessuno dei disegni utilizzati in questo sito, tutti i credits vanno a <a href="https://www.instagram.com/instasio/?hl=it">Sio</a> </p>
+    <p><i>Disclaimer: Non sono il proprietario di nessuno dei disegni utilizzati in questo sito, tutti i credits vanno a <a href="https://www.instagram.com/instasio/?hl=it">Sio</a></i></p>
   </footer>
 
+  <script src="../Scripts/script_base.js"></script>
   <script src="https://sheetdb.io/handlebars.js"></script>
-  <script type="text/javascript" src="../Scripts/script_controllo.js"></script>
 </body>
 
 </html>
