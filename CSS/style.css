@@ -8,9 +8,21 @@ body, html {
   line-height: 1.8;
 }
 
+.w3-wide {
+  letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+  cursor: pointer;
+}
+
 /*
 ___________________________________________
-Immagini Iniziali (Logo. Full height) */
+          STILE PER I BANNER
+___________________________________________
+*/
+
+/*Immagini Banner (Logo. Full height)*/
 .bgimg-banner {
   background-image: url('../Immagini/Banner.png');
   min-height: 65%;
@@ -18,28 +30,14 @@ Immagini Iniziali (Logo. Full height) */
   background-size: cover;
 }
 
-.bgimg-Nickquotes {
-  background-image: url('../Immagini/Candela.jpg');
+.bgimg-VocaboLorro {
+  background-image: url('../Immagini/SuperDoge.jpg');
   min-height: 65%;
   background-position: center;
   background-size: cover;
 }
 
-/*
-___________________________________________
-Stile nella pagina Nickquotes*/
-.stileNickquotes {
-  font-family: 'Brush Script MT', cursive;
-  letter-spacing: 10px;
-  font-size: 35px;
-}
-
-.coloresfondo{
-  background: #1D1F20;
-}
-
-
-/*Centered text on image*/
+/*Testo in posizione centrale sulle immagini*/
 .centeredImage {
   position: absolute;
   top: 50%;
@@ -56,10 +54,25 @@ Stile nella pagina Nickquotes*/
   min-height: 100%;
 }
 
-.w3-wide {
-  letter-spacing: 10px;
+/*
+___________________________________________
+      Stile nella pagina Nickquotes
+___________________________________________
+*/
+
+.bgimg-Nickquotes {
+  background-image: url('../Immagini/Candela.jpg');
+  min-height: 65%;
+  background-position: center;
+  background-size: cover;
 }
 
-.w3-hover-opacity {
-  cursor: pointer;
+.stileNickquotes {
+  font-family: 'Brush Script MT', cursive;
+  letter-spacing: 10px;
+  font-size: 35px;
+}
+
+.coloresfondo{
+  background: #1D1F20;
 }

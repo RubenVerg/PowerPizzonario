@@ -1,5 +1,6 @@
 // Cambia lo stile della navbar quando si scrolla
 window.onscroll = function() {ScrollNavbar()};
+
 function ScrollNavbar() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -21,7 +22,7 @@ function toggleFunction() {
 
 //Aprono o chiudono la barra nella sezione dei credits
 function apriNav() {
-  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.width = "100%";
   document.getElementById("mySidebar").style.display = "block";
 }
 
