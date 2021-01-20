@@ -5,33 +5,49 @@
   <title>DiSionario</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS Esterni -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <!-- Si può tranquillamente cambiare font, ma non saprei quale usare-->
+
+  <!-- Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Aguafina Script'>
-  <!--Incorporamento (?) delle icone carine, usare https://fontawesome.com/icons come reference-->
+
+  <!-- Librerie -->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
   <link rel="stylesheet" href="../CSS/style.css">
+
 </head>
 
 <body>
-
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
-    <div class="w3-bar" id="myNavbar">
-      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-        <i class="fa fa-bars"></i>
-      </a>
-      <a href="../index.html" class="w3-bar-item w3-button"><i class="fas fa-home"></i> HOME</a>
-      <a href="Nickzionario.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-camera"></i> NICKZIONARIO</a>
-      <a href="VocaboLorro.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-gamepad"></i> VOCABOLORRO</a>
-      <a href="DiSionario.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-dog"></i> DISIONARIO</a>
-      <a href="TheZionario.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-pizza-slice"></i> THE_ZIONARIO</a>
-      <a href="Credits.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-scroll"></i> CREDITS</a>
-    </div>
+    <div class="w3-bar w3-text-white w3-black w3-opacity-min" id="myNavbar" style="background-color:#ccccff;">
+			<a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" 
+				href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu" >
+				<i class="fa fa-bars"></i>
+			</a>
+		<a href="../index.html" class="w3-bar-item w3-buttonw3-hide-small w3-hide-medium">
+			<i class="fas fa-home"></i> HOME</a>
+		<a href="Nickzionario.html"	class="w3-bar-item w3-button w3-hide-small w3-hide-medium">
+			<i class="fas fa-camera"></i> NICKZIONARIO</a>
+		<a href="VocaboLorro.html" 	class="w3-bar-item w3-button w3-hide-small w3-hide-medium">
+			<i class="fas fa-gamepad"></i> VOCABOLORRO</a>
+		<a href="DiSionario.html" 	class="w3-bar-item w3-button w3-hide-small w3-hide-medium">
+			<i class="fas fa-dog"></i> DISIONARIO</a>
+		<a href="TheZionario.html" 	class="w3-bar-item w3-button w3-hide-small w3-hide-medium">
+			<i class="fas fa-pizza-slice"></i> THE_ZIONARIO</a>
+		<a href="Credits.html" 		class="w3-bar-item w3-button w3-hide-small w3-hide-medium">
+			<i class="fas fa-scroll"></i> CREDITS</a>    
+		</div>
 
     <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large">
       <a href="../index.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> HOME</a>
       <a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()"> NICKZIONARIO</a>
       <a href="VocaboLorro.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> VOCABOLORRO</a>
@@ -42,35 +58,83 @@
   </div>
 
   <!--Immagine all'inizio della pagina-->
-  <header class="bgimg-banner w3-display-container w3-wide w3-opacity-min" id="inizio">
-	  <div class="w3-display-middle" style="white-space:nowrap;">
-			<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">IL </span> DISIONARIO </span>
+	<header class="bgimg-DiSionario w3-display-container w3-wide w3-opacity-min" id="inizio">
+		<div class="w3-display-middle" style="white-space:nowrap;">
+			<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-opacity-min">
+				<span class="w3-hide-small">IL </span> DISIONARIO 
+			</span>
 		</div>
 	</header>
 
-  <!-- Container (Sezione della Selezione) -->
-  <div class="w3-content w3-container w3-padding-32" id="about">
-    <h3 class="w3-center">CIAO SIO, MI SALUTI?</h3>
-    <p class="w3-center"><em>Benvenutз a tuttз!</em></p>
-    <p>Siete planati nella sezione del DiSionario! Qui troverete tutte (o quasi) le definizioni relative a ciò che dice il nostro caro Sio</p>
+	<!-- Bottone in fondo a destra-->
+	<div class="fixed-action-btn" >
+		<a class="btn-floating btn-large blue" href="#about">
+			<i class="large material-icons fas fa-arrow-up"></i>
+		</a>
+	</div>
 
-    <!--Prende i dati dal file sheet e li mette in una tabella-->
-    <table data-sheetdb-url="https://sheetdb.io/api/v1/5wbjaopomco9u"
-    data-sheetdb-sheet="DiSionario" style="font-size: 18px">
-    <!--Verificare come distinguere la Lettera della sezione dal resto,
-    in modo da farla più grande/non lasciare tutto lo spazio sotto -->
-      <tr>
-        <td>
-          <b style="font-size: 20px">{{LEMMI}}</b>
-          <i style="font-size: 15px"> - {{SIGLA}}</i><br>
-          {{DEFINIZIONE}}<br>
-        </td>
-        <td>
-          <i style="font-size: 16px"><br>{{ORIGINE}}</i>
-        </td>
-      </tr>
-    </table>
+  <!-- Container (Sezione della Selezione) -->
+  <div class="w3-container w3-padding-32 w3-center" id="about">
+    <h3>CIAO SIO, MI SALUTI?</h3>
+    <p><em>Benvenutə a tuttз!</em></p>
+    <p>Siete planatə nella sezione del DiSionario! Qui troverete tutte (o quasi) le definizioni relative a ciò che dice il nostro caro Sio</p>
+
+    <div id="menu">
+		<hr>
+		<h3>Alfabeto</h1>
+		<div class="w3-bar section table-of-contents">
+			<a href="##" class="w3-bar-item w3-border-right">#</a>
+			<a href="#A" class="w3-bar-item w3-border-right">A</a>
+			<a href="#B" class="w3-bar-item w3-border-right">B</a>
+			<a href="#C" class="w3-bar-item w3-border-right">C</a>
+			<a href="#D" class="w3-bar-item w3-border-right">D</a>
+			<a href="#E" class="w3-bar-item w3-border-right">E</a>
+			<a href="#F" class="w3-bar-item w3-border-right">F</a>
+			<a href="#G" class="w3-bar-item w3-border-right">G</a>
+			<a href="#H" class="w3-bar-item w3-border-right">H</a>
+			<a href="#I" class="w3-bar-item w3-border-right">I</a>
+			<a href="#J" class="w3-bar-item w3-border-right">J</a>
+			<a href="#K" class="w3-bar-item w3-border-right">K</a>
+			<a href="#L" class="w3-bar-item w3-border-right">L</a>
+			<a href="#M" class="w3-bar-item">M</a>
+		</div>
+		<br>
+		<div class="w3-bar section table-of-contents">
+			<a href="#N" class="w3-bar-item w3-border-right">N</a>
+			<a href="#O" class="w3-bar-item w3-border-right">O</a>
+			<a href="#P" class="w3-bar-item w3-border-right">P</a>
+			<a href="#Q" class="w3-bar-item w3-border-right">Q</a>
+			<a href="#R" class="w3-bar-item w3-border-right">R</a>
+			<a href="#S" class="w3-bar-item w3-border-right">S</a>
+			<a href="#T" class="w3-bar-item w3-border-right">T</a>
+			<a href="#U" class="w3-bar-item w3-border-right">U</a>
+			<a href="#V" class="w3-bar-item w3-border-right">V</a>
+			<a href="#W" class="w3-bar-item w3-border-right">W</a>
+			<a href="#X" class="w3-bar-item w3-border-right">X</a>
+			<a href="#Y" class="w3-bar-item w3-border-right">Y</a>
+			<a href="#Z" class="w3-bar-item">Z</a>
+		</div>
+		<hr>
+	</div>
   </div>
+
+  <!-- Container per la tabella -->
+	<div class="w3-container w3-padding-16 w3-content">
+		<table id="sio">
+			<script id="hr-template" type="text/x-handlebars-template">
+				<tr>
+					<td>
+						<b style="font-size: 20px" id="{{cells.LEMMI}}" class="section scrollspy">{{cells.LEMMI}}</b>
+						<i style="font-size: 15px"> - {{cells.SIGLA}}</i><br>
+						{{cells.DEFINIZIONE}}<br>
+					</td>
+					<td>
+						<i style="font-size: 16px"><br>{{cells.ORIGINE}}</i>
+					</td>
+				</tr>
+			</script>
+		</table>
+	</div>
 
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-32 ">
@@ -87,11 +151,13 @@
       <a href="http://powerpizza.stream"><i class="fab fa-twitch w3-hover-opacity"></i></a>
       <a href="https://www.youtube.com/user/scottecs2"><i class="fab fa-youtube w3-hover-opacity"></i></a>
     </div>
-    <p><i>Disclaimer: Non sono il proprietario di nessuno dei disegni utilizzati in questo sito, tutti i credits vanno a <a href="https://www.instagram.com/instasio/?hl=it">Sio</a></i></p>
+    <p><i>Disclaimer: Li vedete i disegnini buffi? Ecco, li ha fatti
+				<a href="https://www.instagram.com/instasio/?hl=it" class="w3-text-yellow">Sio</a>! È tutta opera sua!</i></p>
   </footer>
 
   <script src="../Scripts/script_base.js"></script>
-  <script src="https://sheetdb.io/handlebars.js"></script>
+  <script src="../Scripts/script_import.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 </body>
 
 </html>

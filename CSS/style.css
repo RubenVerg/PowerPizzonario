@@ -8,6 +8,10 @@ body, html {
   line-height: 1.8;
 }
 
+tbody tr:first-child {
+	display: none;
+}
+
 .w3-wide {
   letter-spacing: 10px;
 }
@@ -16,6 +20,10 @@ body, html {
   cursor: pointer;
 }
 
+.testoImpact{
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal,
+	"Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+}
 /*
 ___________________________________________
           STILE PER I BANNER
@@ -24,7 +32,7 @@ ___________________________________________
 
 /*Immagini Banner (Logo. Full height)*/
 .bgimg-banner {
-  background-image: url('../Immagini/Banner.png');
+  background-image: url('../Immagini/Banner.jpg');
   min-height: 65%;
   background-position: center;
   background-size: cover;
@@ -32,6 +40,13 @@ ___________________________________________
 
 .bgimg-VocaboLorro {
   background-image: url('../Immagini/SuperDoge.jpg');
+  min-height: 65%;
+  background-position: center;
+  background-size: cover;
+}
+
+.bgimg-DiSionario {
+  background-image: url('../Immagini/sio_hi.gif');
   min-height: 65%;
   background-position: center;
   background-size: cover;
@@ -75,4 +90,22 @@ ___________________________________________
 
 .coloresfondo{
   background: #1D1F20;
+}
+
+/*
+___________________________________________
+		Stile per l'alfabeto
+___________________________________________
+*/
+
+.table-of-contents a{
+	font-weight:auto;
+	color:#757575;
+	line-height: 50%;
+}
+
+.table-of-contents a:hover{
+	padding-left:15px;
+	border-left: none;
+	background-color: #ccffcc;
 }

@@ -5,12 +5,17 @@
 	<title>Pizzonario</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS Esterni -->
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<!-- Si può tranquillamente cambiare font, ma non saprei quale usare-->
+
+	<!-- Font -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Aguafina Script'>
-	<!--Incorporamento (?) delle icone carine, usare https://fontawesome.com/icons come reference-->
+
+	<!-- Librerie -->
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 	<link rel="stylesheet" href="CSS/style.css">
 </head>
 
@@ -18,21 +23,21 @@
 	<!-- Navbar (In cima alla paige) -->
 	<div class="w3-top">
 		<!-- Navbar su schermi normali-->
-		<div class="w3-bar" id="myNavbar">
-			<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+		<div class="w3-bar w3-text-white w3-black w3-opacity-min" id="myNavbar" style="background-color:#ccccff;">
+			<a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" 
+				href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu" >
 				<i class="fa fa-bars"></i>
 			</a>
-			<a href="#" class="w3-bar-item w3-button"><i class="fas fa-home"></i> HOME</a>
-      <a href="Pagine/Nickzionario.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-camera"></i> NICKZIONARIO</a>
-      <a href="Pagine/VocaboLorro.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-gamepad"></i> VOCABOLORRO</a>
-      <a href="Pagine/DiSionario.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-dog"></i> DISIONARIO</a>
-			<a href="Pagine/TheZionario.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-pizza-slice"></i> THE_ZIONARIO</a>
-      <a href="Pagine/Credits.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-scroll"></i> CREDITS</a>
+			<a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fas fa-home"></i> HOME</a>
+			<a href="Pagine/Nickzionario.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium" ><i class="fas fa-camera"></i> NICKZIONARIO</a>
+			<a href="Pagine/VocaboLorro.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fas fa-gamepad"></i> VOCABOLORRO</a>
+			<a href="Pagine/DiSionario.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fas fa-dog"></i> DISIONARIO</a>
+			<a href="Pagine/TheZionario.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fas fa-pizza-slice"></i> THE_ZIONARIO</a>
+			<a href="Pagine/Credits.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fas fa-scroll"></i> CREDITS</a>
 		</div>
 
 		<!-- Navbar su schermi piccolini -->
-		<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-			<a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()"> HOME</a>
+		<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-opacity-min" style="background-color:#ccccff;">
 			<a href="Pagine/Nickzionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> NICKZIONARIO</a>
 			<a href="Pagine/VocaboLorro.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> VOCABOLORRO</a>
 			<a href="Pagine/DiSionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> DISIONARIO</a>
@@ -42,8 +47,8 @@
 	</div>
 
 	<!--Immagine all'inizio della pagina-->
-	<header class="bgimg-banner w3-display-container w3-wide  w3-opacity-min" id="inizio">
-	  <div class="w3-display-middle" style="white-space:nowrap;">
+	<header class="bgimg-banner w3-display-container w3-wide w3-opacity-min" id="inizio">
+		<div class="w3-display-middle w3-opacity-min" style="white-space:nowrap;">
 			<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">IL <span class="w3-hide-small">POWER </span> PIZZONARIO </span>
 		</div>
 	</header>
@@ -56,49 +61,58 @@
 			(il Bernardi Inverecondito e il Nickzionario), il Powerpizzionario è in uso nelle migliori scuole di dislessia. Questa versione del Powerpizzonario include anche le parole che non si trovano negli scontrini,
 			e delle Nikquotes</p>
 
-		<!--Le immagini sono da rifare, pensavo di fare dei bottoni rettangolari, piuttosto che dei quadratoni-->
-		<!-- ne ho aggiunte un paio, ma sono comunque da rivedere-->
-
-		<!--Riga Nickzionario e VocaboLorro-->
+		<!-- Riga Nickzionario e VocaboLorro -->
 		<div class="w3-row">
 			<div class="w3-col m6 w3-center w3-padding-large w3-display-container">
 				<a href="Pagine/Nickzionario.html">
-					<img src="Immagini/Nick.png" class="w3-round w3-image w3-opacity" alt="Nickckk" width="500" height="150">
-					<div class="w3-display-middle w3-large w3-text-black"><b>Il Nickzionario</b></div>
+					<img src="Immagini/Nick.png" class="w3-image w3-circle w3-opacity"
+						alt="Nickckk" width="500" height="150">
 				</a>
+				<h4 class="w3-text-black testoImpact" >
+					Nickzionario
+				</h4>
 			</div>
 
 			<div class="w3-col m6 w3-center w3-padding-large w3-display-container">
 				<a href="Pagine/VocaboLorro.html">
-					<img src="Immagini/Lorro.png" class="w3-round w3-image w3-opacity" alt="Nickckk" width="500" height="150">
-					<div class="w3-display-middle w3-large w3-text-black"><b>VocaboLorro</b></div>
+					<img src="Immagini/Lorro.png" class="w3-image w3-circle w3-opacity"
+						alt="Lorro" width="500" height="150">
 				</a>
+				<h4 class="w3-text-black testoImpact">
+					VocaboLorro
+				</h4>
 			</div>
 		</div>
 
-		<!--Riga DiSionario e TheZionario-->
+		<!-- Riga DiSionario e TheZionario -->
 		<div class="w3-row">
 			<div class="w3-col m6 w3-center w3-padding-large w3-display-container">
 				<a href="Pagine/DiSionario.html">
-					<img src="Immagini/Sio.png" class="w3-round w3-image w3-opacity" alt="Nickckk" width="500" height="150">
-					<div class="w3-display-middle w3-large  w3-text-black"><b>DiSionario</b></div>
+					<img src="Immagini/Sio.png" class="w3-circle w3-image w3-opacity"
+						alt="Sio" width="500" height="150">
 				</a>
+				<h4 class="w3-text-black testoImpact">
+					DiSionario
+				</h4>
 			</div>
 
-			<div class="w3-col m6 w3-center w3-padding-large w3-display-container">
+			<div class="w3-col m6 w3-center w3-padding-large w3-display-container ">
 				<a href="Pagine/TheZionario.html">
-					<img src="Immagini/PPPOld_NoLogo.png" class="w3-round w3-image w3-opacity" alt="Nickckk" width="500" height="150">
-					<div class="w3-display-middle w3-large w3-text-black"><b>The_Zionario</b></div>
+					<img src="Immagini/PPPOld_NoLogo.png" class="w3-circle w3-image w3-opacity"
+						alt="TheZionario" width="500" height="150">
 				</a>
+				<h4 class="w3-text-black testoImpact">
+					The_Zionario
+				</h4>
 			</div>
 		</div>
 
 		<br>
 
 		<!--Bottone per le Nickquote-->
-		<div class="w3-row w3-black stileNickquotes">
+		<div class="w3-row w3-black stileNickquotes w3-round-large">
 			<a href="Pagine/Nickquotes.html">
-				<div class="w3-center w3-padding-32 w3-display-container w3-hover-opacity">
+				<div class="w3-center w3-padding-32 w3-display-container w3-hover-opacity w3-round-large">
 					<div class="w3-padding-large w3-display-middle w3-text-yellow">
 						<b>Nickquotes</b>
 					</div>
