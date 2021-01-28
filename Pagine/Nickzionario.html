@@ -23,54 +23,69 @@
   <link rel="stylesheet" href="../CSS/style.css">
 
   <style>
-    tbody tr:first-child {display: none;}
-	</style>
+    .table-of-contents a:hover {
+      background-color: black;
+      opacity: 0.5;
+      color: white;
+    }
+
+    tbody tr:first-child {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
   <!-- Navbar (sit on top) -->
-	<div class="w3-top">
-		<!-- Navbar su schermi normali-->
-		<div class="w3-bar w3-text-white w3-black w3-opacity-min" id="myNavbar" style="background-color:#ccccff;">
-			<a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" 
-				href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu" >
-				<i class="fa fa-bars"></i>
-			</a>
-			<a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fas fa-home"></i> HOME</a>
-			<a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium" ><i class="fas fa-camera"></i> NICKZIONARIO</a>
-			<a href="VocaboLorro.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fas fa-gamepad"></i> VOCABOLORRO</a>
-			<a href="DiSionario.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fas fa-dog"></i> DISIONARIO</a>
-			<a href="TheZionario.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fas fa-pizza-slice"></i> THE_ZIONARIO</a>
-			<a href="Credits.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fas fa-scroll"></i> CREDITS</a>
-		</div>
+  <div class="w3-top">
+    <!-- Navbar su schermi normali-->
+    <div class="w3-bar w3-text-white w3-black w3-opacity-min" id="myNavbar" style="background-color:#ccccff;">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">
+        <i class="fas fa-home"></i> HOME</a>
+      <a href="Nickzionario.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">
+        <i class="fas fa-camera"></i> NICKZIONARIO</a>
+      <a href="VocaboLorro.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">
+        <i class="fas fa-gamepad"></i> VOCABOLORRO</a>
+      <a href="DiSionario.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">
+        <i class="fas fa-dog"></i> DISIONARIO</a>
+      <a href="TheZionario.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">
+        <i class="fas fa-pizza-slice"></i> THE_ZIONARIO</a>
+    </div>
 
-		<!-- Navbar su schermi piccolini -->
-		<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large coloresfondo">
-			<a href="Nickzionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> NICKZIONARIO</a>
-			<a href="VocaboLorro.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> VOCABOLORRO</a>
-			<a href="DiSionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> DISIONARIO</a>
-			<a href="TheZionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> THE_ZIONARIO</a>
-			<a href="Credits.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> CREDITS</a>
-		</div>
-	</div>
+    <!-- Navbar su schermi piccoli -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-opacity-min" style="background-color:#ccccff;">
+      <a href="../index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">
+        <i class="fas fa-home"></i> HOME</a>
+      <a href="Nickzionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()">
+        <i class="fas fa-camera"></i> NICKZIONARIO</a>
+      <a href="VocaboLorro.html" class="w3-bar-item w3-button" onclick="toggleFunction()">
+        <i class="fas fa-gamepad"></i> VOCABOLORRO</a>
+      <a href="DiSionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()">
+        <i class="fas fa-dog"></i>DISIONARIO</a>
+      <a href="TheZionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()">
+        <i class="fas fa-pizza-slice"></i>THE_ZIONARIO</a>
+    </div>
+  </div>
 
   <!--Immagine all'inizio della pagina-->
-  <header class="bgimg-banner w3-display-container w3-wide w3-opacity-min" id="inizio">
+  <header class="bgimg-Nickzionario w3-display-container w3-wide w3-opacity-min" id="about">
     <div class="w3-display-middle w3-opacity-min" style="white-space:nowrap;">
-		<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
-			<span class="w3-hide-small"> IL </span> NICKZIONARIO 
-		</span>
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-opacity-min">
+        <span class="w3-hide-small"> IL </span> NICKZIONARIO
+      </span>
     </div>
   </header>
-	
-	<!-- Bottone in fondo a destra-->
-	<div class="fixed-action-btn" >
-		<a class="btn-floating btn-large w3-black w3-border" href="#about">
-			<i class="large material-icons fas fa-arrow-up"></i>
-		</a>
-	</div>
-	
-	
+
+  <!-- Bottone in fondo a destra-->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large w3-black w3-border" href="#about">
+      <i class="large material-icons fas fa-arrow-up"></i>
+    </a>
+  </div>
+
   <!-- Container (Sezione della Selezione) -->
   <div class="w3-container w3-padding-32 w3-center" id="about">
     <h3 class="">CIAO NICK, SALUTAMI MARTINA!</h3>
@@ -115,12 +130,12 @@
         </div>
         <hr>
     </div>
-</div>
+  </div>
 
-	<div class="w3-container w3-padding-16 w3-content">
-		<table id="nick" class="w3-table">
-			<script id="hr-template" type="text/x-handlebars-template">
-			<tr>
+  <div class="w3-container w3-padding-16 w3-content">
+    <table id="nick" class="w3-table">
+      <script id="hr-template" type="text/x-handlebars-template">
+        <tr>
 				<td>
 					<b style="font-size: 20px" id="{{cells.LEMMI}}" class="section scrollspy">{{cells.LEMMI}}</b>
 					<i style="font-size: 15px"> - {{cells.SIGLA}}</i><br>
@@ -131,28 +146,41 @@
 				</td>
 			</tr>
 			</script>
-		</table>
+    </table>
   </div>
 
-
   <!-- Footer -->
-  <footer class="w3-center w3-black w3-padding-32 ">
-    <!-- Bottone per tornare in cima-->
-    <a href="#inizio" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Torna in Cina</a>
+  <footer class="w3-center w3-black w3-padding-32">
+
+    <!-- Bottone per i credits-->
+    <a href="../Pagine/Credits.html" class="w3-button w3-round w3-grey glow-on-hover">
+      <i class="fas fa-scroll"></i> Vuoi sapere chi sta partecipando a questo progetto?
+      Clicca qui! <i class="fas fa-scroll"></i>
+    </a>
+
     <div class="w3-xlarge w3-section w3-text-sand">
       <!--I don't like sand, it's course and irritating-->
       <i>Puoi trovare Power Pizza Podcast ai seguenti link: </i>
       <br>
       <!-- Le icone sono link ai vari siti-->
-      <a href="https://www.spreaker.com/show/power-pizza"><i class="fa fa-microphone-alt w3-hover-opacity"></i></a>
-      <a href="https://www.instagram.com/powerpizzapodcask111222333/?hl=it"><i class="fab fa-instagram w3-hover-opacity"></i></a>
-      <a href="http://www.datecideisoldi.com"><i class="fab fa-patreon w3-hover-opacity"></i></a>
-      <a href="http://powerpizza.stream"><i class="fab fa-twitch w3-hover-opacity"></i></a>
-      <a href="https://www.youtube.com/user/scottecs2"><i class="fab fa-youtube w3-hover-opacity"></i></a>
+      <a href="https://www.spreaker.com/show/power-pizza">
+        <i class="fa fa-microphone-alt w3-hover-opacity" style="padding: 4px"></i></a>
+      <a href="https://www.instagram.com/powerpizzapodcask111222333/?hl=it">
+        <i class="fab fa-instagram w3-hover-opacity" style="padding:4px"></i></a>
+      <a href="http://www.datecideisoldi.com">
+        <i class="fab fa-patreon w3-hover-opacity" style="padding: 4px"></i></a>
+      <a href="http://powerpizza.stream">
+        <i class="fab fa-twitch w3-hover-opacity" style="padding: 4px"></i></a>
+      <a href="https://www.youtube.com/user/scottecs2">
+        <i class="fab fa-youtube w3-hover-opacity"></i></a>
     </div>
-    <p><i>Disclaimer: Li vedete i disegnini buffi? Ecco, li ha fatti
-		<a href="https://www.instagram.com/instasio/?hl=it" class="w3-text-yellow">Sio</a>! È tutta opera sua!</i></p>
- </footer>
+
+    <p>
+      <i>Disclaimer: Li vedete i disegnini buffi? Ecco, li ha fatti
+        <a href="https://www.instagram.com/instasio/?hl=it" class="testoFooter">
+          Sio</a>! È tutta opera sua!</i>
+    </p>
+  </footer>
 
   <script src="../Scripts/script_base.js"></script>
   <script src="../Scripts/script_import.js"></script>

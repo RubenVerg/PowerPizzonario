@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS Esterni -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 	<!-- Font -->
@@ -24,30 +25,38 @@
 	<div class="w3-top">
 		<!-- Navbar su schermi normali-->
 		<div class="w3-bar w3-text-white w3-black w3-opacity-min" id="myNavbar" style="background-color:#ccccff;">
-			<a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" 
-				href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu" >
+			<a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
 				<i class="fa fa-bars"></i>
 			</a>
-			<a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fas fa-home"></i> HOME</a>
-			<a href="Pagine/Nickzionario.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium" ><i class="fas fa-camera"></i> NICKZIONARIO</a>
-			<a href="Pagine/VocaboLorro.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fas fa-gamepad"></i> VOCABOLORRO</a>
-			<a href="Pagine/DiSionario.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fas fa-dog"></i> DISIONARIO</a>
-			<a href="Pagine/TheZionario.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fas fa-pizza-slice"></i> THE_ZIONARIO</a>
-			<a href="Pagine/Credits.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><i class="fas fa-scroll"></i> CREDITS</a>
+			<a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">
+				<i class="fas fa-home"></i> HOME</a>
+			<a href="Nickzionario.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">
+				<i class="fas fa-camera"></i> NICKZIONARIO</a>
+			<a href="VocaboLorro.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">
+				<i class="fas fa-gamepad"></i> VOCABOLORRO</a>
+			<a href="DiSionario.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">
+				<i class="fas fa-dog"></i> DISIONARIO</a>
+			<a href="TheZionario.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">
+				<i class="fas fa-pizza-slice"></i> THE_ZIONARIO</a>
 		</div>
 
-		<!-- Navbar su schermi piccolini -->
+		<!-- Navbar su schermi piccoli -->
 		<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-opacity-min" style="background-color:#ccccff;">
-			<a href="Pagine/Nickzionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> NICKZIONARIO</a>
-			<a href="Pagine/VocaboLorro.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> VOCABOLORRO</a>
-			<a href="Pagine/DiSionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> DISIONARIO</a>
-			<a href="Pagine/TheZionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> THE_ZIONARIO</a>
-			<a href="Pagine/Credits.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> CREDITS</a>
+			<a href="#" class="w3-bar-item w3-button" onclick="toggleFunction()">
+				<i class="fas fa-home"></i> HOME</a>
+			<a href="Pagine/Nickzionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()">
+				<i class="fas fa-camera"></i> NICKZIONARIO</a>
+			<a href="Pagine/VocaboLorro.html" class="w3-bar-item w3-button" onclick="toggleFunction()">
+				<i class="fas fa-gamepad"></i> VOCABOLORRO</a>
+			<a href="Pagine/DiSionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()">
+				<i class="fas fa-dog"></i>DISIONARIO</a>
+			<a href="Pagine/TheZionario.html" class="w3-bar-item w3-button" onclick="toggleFunction()">
+				<i class="fas fa-pizza-slice"></i>THE_ZIONARIO</a>
 		</div>
 	</div>
 
 	<!--Immagine all'inizio della pagina-->
-	<header class="bgimg-banner w3-display-container w3-wide w3-opacity-min" id="inizio">
+	<header class="bgimg-banner w3-display-container w3-wide w3-opacity-min" id="about">
 		<div class="w3-display-middle w3-opacity-min" style="white-space:nowrap;">
 			<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">IL <span class="w3-hide-small">POWER </span> PIZZONARIO </span>
 		</div>
@@ -57,7 +66,7 @@
 	<div class="w3-content w3-container w3-padding-32">
 		<h3 class="w3-center">CIAO!</h3>
 		<p class="w3-center"><em>Benvenutз a tuttз!</em></p>
-		<p>Ecco a voi il Powerpizzonario, il famoso dizionario che include anche il Nickzionario, una raccolta di neologismi coniati nel corso delle puntate del Power Pizza Podcast. Come i suoi predecessori
+		<p>Ecco a voi il Powerpizzonario, il "famoso" dizionario che include una raccolta di neologismi coniati nel corso delle puntate del Power Pizza Podcast. Come i suoi predecessori
 			(il Bernardi Inverecondito e il Nickzionario), il Powerpizzionario è in uso nelle migliori scuole di dislessia. Questa versione del Powerpizzonario include anche le parole che non si trovano negli scontrini,
 			e delle Nikquotes</p>
 
@@ -65,18 +74,16 @@
 		<div class="w3-row">
 			<div class="w3-col m6 w3-center w3-padding-large w3-display-container">
 				<a href="Pagine/Nickzionario.html">
-					<img src="Immagini/Nick.png" class="w3-image w3-circle w3-opacity"
-						alt="Nickckk" width="500" height="150">
+					<img src="Immagini/Nick.png" class="w3-image w3-circle w3-opacity" alt="Nickckk" width="500" height="150">
 				</a>
-				<h4 class="w3-text-black testoImpact" >
+				<h4 class="w3-text-black testoImpact">
 					Nickzionario
 				</h4>
 			</div>
 
 			<div class="w3-col m6 w3-center w3-padding-large w3-display-container">
 				<a href="Pagine/VocaboLorro.html">
-					<img src="Immagini/Lorro.png" class="w3-image w3-circle w3-opacity"
-						alt="Lorro" width="500" height="150">
+					<img src="Immagini/Lorro.png" class="w3-image w3-circle w3-opacity" alt="Lorro" width="500" height="150">
 				</a>
 				<h4 class="w3-text-black testoImpact">
 					VocaboLorro
@@ -88,8 +95,7 @@
 		<div class="w3-row">
 			<div class="w3-col m6 w3-center w3-padding-large w3-display-container">
 				<a href="Pagine/DiSionario.html">
-					<img src="Immagini/Sio.png" class="w3-circle w3-image w3-opacity"
-						alt="Sio" width="500" height="150">
+					<img src="Immagini/Sio.png" class="w3-circle w3-image w3-opacity" alt="Sio" width="500" height="150">
 				</a>
 				<h4 class="w3-text-black testoImpact">
 					DiSionario
@@ -98,8 +104,7 @@
 
 			<div class="w3-col m6 w3-center w3-padding-large w3-display-container ">
 				<a href="Pagine/TheZionario.html">
-					<img src="Immagini/PPPOld_NoLogo.png" class="w3-circle w3-image w3-opacity"
-						alt="TheZionario" width="500" height="150">
+					<img src="Immagini/PPPOld_NoLogo.png" class="w3-circle w3-image w3-opacity" alt="TheZionario" width="500" height="150">
 				</a>
 				<h4 class="w3-text-black testoImpact">
 					The_Zionario
@@ -114,7 +119,7 @@
 			<a href="Pagine/Nickquotes.html">
 				<div class="w3-center w3-padding-32 w3-display-container w3-hover-opacity w3-round-large">
 					<div class="w3-padding-large w3-display-middle w3-text-yellow">
-						<b>Nickquotes</b>
+						<b>Pizzaquotes</b>
 					</div>
 				</div>
 			</a>
@@ -146,22 +151,41 @@
 	</div>
 
 	<!-- Footer -->
-	<footer class="w3-center w3-black w3-padding-64">
+	<footer class="w3-center w3-black w3-padding-32">
+
 		<!-- Bottone per tornare in cima-->
-		<a href="#inizio" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Torna in Cina</a>
+		<a href="#about" class="w3-button w3-light-green w3-round"><i class="fa fa-arrow-up w3-margin-right"></i>Torna in Cina</a>
+
+		<br><br>
+
+		<!-- Bottone per i credits-->
+		<a href="../Pagine/Credits.html" class="w3-button w3-round w3-grey glow-on-hover">
+			<i class="fas fa-scroll"></i> Vuoi sapere chi sta partecipando a questo progetto?
+			Clicca qui! <i class="fas fa-scroll"></i>
+		</a>
+
 		<div class="w3-xlarge w3-section w3-text-sand">
 			<!--I don't like sand, it's course and irritating-->
 			<i>Puoi trovare Power Pizza Podcast ai seguenti link: </i>
 			<br>
 			<!-- Le icone sono link ai vari siti-->
-			<a href="https://www.spreaker.com/show/power-pizza"><i class="fa fa-microphone-alt w3-hover-opacity"></i></a>
-			<a href="https://www.instagram.com/powerpizzapodcask111222333/?hl=it"><i class="fab fa-instagram w3-hover-opacity"></i></a>
-			<a href="http://www.datecideisoldi.com"><i class="fab fa-patreon w3-hover-opacity"></i></a>
-			<a href="http://powerpizza.stream"><i class="fab fa-twitch w3-hover-opacity"></i></a>
-			<a href="https://www.youtube.com/user/scottecs2"><i class="fab fa-youtube w3-hover-opacity"></i></a>
+			<a href="https://www.spreaker.com/show/power-pizza">
+				<i class="fa fa-microphone-alt w3-hover-opacity" style="padding: 4px"></i></a>
+			<a href="https://www.instagram.com/powerpizzapodcask111222333/?hl=it">
+				<i class="fab fa-instagram w3-hover-opacity" style="padding:4px"></i></a>
+			<a href="http://www.datecideisoldi.com">
+				<i class="fab fa-patreon w3-hover-opacity" style="padding: 4px"></i></a>
+			<a href="http://powerpizza.stream">
+				<i class="fab fa-twitch w3-hover-opacity" style="padding: 4px"></i></a>
+			<a href="https://www.youtube.com/user/scottecs2">
+				<i class="fab fa-youtube w3-hover-opacity"></i></a>
 		</div>
-		<p><i>Disclaimer: Li vedete i disegnini buffi? Ecco, li ha fatti
-			<a href="https://www.instagram.com/instasio/?hl=it">Sio</a>! È tutta opera sua!</i></p>
+
+		<p>
+			<i>Disclaimer: Li vedete i disegnini buffi? Ecco, li ha fatti
+				<a href="https://www.instagram.com/instasio/?hl=it" class="testoFooter">
+					Sio</a>! È tutta opera sua!</i>
+		</p>
 	</footer>
 
 	<script src="Scripts/script_base.js"></script>

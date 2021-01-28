@@ -53,33 +53,34 @@ window.addEventListener('load', function(){
 	});
 });
 
-// Importa le Nickquotes
+// Importa le Pizzaquotes
 window.addEventListener('load', function(){
 	var HRTemplate = Handlebars.compile($('#hr-template').html());
 
 	var mySpreadsheet = "https://docs.google.com/spreadsheets/d/1LS-6HtyDrVj-kFU_eVI9DP_210kMRwzgjqR74MmLlM4/edit#gid=2023529327";
-	var testoquery = "select B,C";
+	var testoquery = "select B,C,D";
 
-	$('#nickquotes').sheetrock({
+	$('#pizzaquotes').sheetrock({
 		url: mySpreadsheet,
 		query: testoquery,
+		rowTemplate: HRTemplate,
 	});
 });
 
-// Importa le Nickquotes random
+// Importa le Pizzaquotes random
 window.addEventListener('load', function(){
-	var HRTemplate = Handlebars.compile($('#hr-template').html());
+	var HRTemplate = Handlebars.compile($('#hr-template-random').html());
 	var mySpreadsheet = "https://docs.google.com/spreadsheets/d/1LS-6HtyDrVj-kFU_eVI9DP_210kMRwzgjqR74MmLlM4/edit#gid=2023529327";
 
-	// Cambiare questo valore se vengono aumentate le Nickquotes
+	// Cambiare questo valore se aumentano le Pizzaquotes
 	var numQuotes = 72;
 	var quoteScelta = Math.floor((Math.random() * numQuotes)+1);
 
-	var testoquery = "select B,C where A = ";
+	var testoquery = "select B,C,D where A = ";
 	testoquery += quoteScelta;
 
 	// Carica la nickquote random
-	$('#randomNick').sheetrock({
+	$('#randomPizza').sheetrock({
 		url: mySpreadsheet,
 		query: testoquery,
 		rowTemplate: HRTemplate,
