@@ -73,6 +73,13 @@ ___________________________________________
   background-size: cover;
 }
 
+.bgimg-TheZionario {
+  background-image: url('../Immagini/calzone.jpg');
+  min-height: 65%;
+  background-position: center;
+  background-size: cover;
+}
+
 /*Testo in posizione centrale sulle immagini*/
 .centeredImage {
   position: absolute;
