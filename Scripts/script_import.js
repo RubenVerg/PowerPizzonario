@@ -44,8 +44,7 @@ window.addEventListener('load', function(){
 window.addEventListener('load', function(){
   // Compile the Handlebars template for HR leaders.
 	var HRTemplate = Handlebars.compile($('#hr-template').html());
-
-	var mySpreadsheet = "https://docs.google.com/spreadsheets/d/1LS-6HtyDrVj-kFU_eVI9DP_210kMRwzgjqR74MmLlM4/edit#gid=546890516";
+	var mySpreadsheet = "https://docs.google.com/spreadsheets/d/1LS-6HtyDrVj-kFU_eVI9DP_210kMRwzgjqR74MmLlM4/edit#gid=2125024679";
 
 	$('#community').sheetrock({
 		url: mySpreadsheet,
