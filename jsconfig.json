@@ -1,0 +1,6 @@
+{
+	"jsx": true,
+	"jsxFactory": "window.jsx.createElement",
+	"rootDir": "jsx",
+	"outDir": "js"
+}
