@@ -1,5 +1,8 @@
 export const __name = 'parse';
 
+/**
+ * @returns {Promise<(any[])[]>}
+ */
 export function csv(url) {
 	return new Promise((res, rej) => {
 		Papa.parse(url, {
@@ -9,7 +12,7 @@ export function csv(url) {
 				else res(Array.isArray(data.data) && data.data[data.data.length - 1] == '' ? data.data.slice(0, -1) : data.data);
 			}
 		})
-	})
+	});
 }
 
 export function normalizeLetter(letter) {

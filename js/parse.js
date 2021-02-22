@@ -2,6 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.normalizeLetter = exports.csv = exports.__name = void 0;
 exports.__name = 'parse';
+/**
+ * @returns {Promise<(any[])[]>}
+ */
 function csv(url) {
     return new Promise((res, rej) => {
         Papa.parse(url, {

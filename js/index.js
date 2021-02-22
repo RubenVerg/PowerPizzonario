@@ -9,7 +9,7 @@ function toggleNavbar() {
 exports.toggleNavbar = toggleNavbar;
 // Bottone per tutte le Nickquotes
 function SceltaTutte() {
-    const tabellaQuote = document.querySelector('#stampaNickquotes');
+    const tabellaQuote = document.querySelector('#quotes');
     const btnAllQuote = document.querySelector('#btnvoci');
     if (tabellaQuote.style.display === 'none') {
         // Cambia il testo del bottone
@@ -27,7 +27,7 @@ function SceltaTutte() {
 exports.SceltaTutte = SceltaTutte;
 // Bottone per tutte le Nickquotes
 function SceltaRandom() {
-    const divRandom = document.getElementById('divRandomQuote');
+    const divRandom = document.getElementById('randomQuote');
     const btnRandom = document.getElementById('btnrandom');
     if (divRandom.style.display === 'none') {
         // Cambia il testo del bottone
