@@ -1,203 +1,235 @@
-body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Lato", sans-serif;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Lato", sans-serif;
 }
 
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-  cursor: url('cursor.cur'), auto;
+body,
+html {
+	height: 100%;
+	color: #777;
+	line-height: 1.8;
+	cursor: url("cursor.cur"), auto;
 }
 
-
-a:active{
-  cursor: url('cursor.cur'), auto;
+a:active {
+	cursor: url("cursor.cur"), auto;
 }
 
-a:hover{
-  cursor: url('cursor.cur'), auto;
+a:hover {
+	cursor: url("cursor.cur"), auto;
 }
 
 .w3-wide {
-  letter-spacing: 10px;
+	letter-spacing: 10px;
 }
 
 .w3-hover-opacity {
-  cursor: pointer;
+	cursor: pointer;
 }
 
-.testoImpact{
-	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal,
-	"Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+.testoImpact {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat",
+		"Bitstream Vera Sans Bold", "Arial Black", sans-serif;
 }
 
-.testoFooter{
-  text-decoration: underline;
+.testoFooter {
+	text-decoration: underline;
 }
 
-.testoFooter:hover{
-  color: yellow;
+.testoFooter:hover {
+	color: yellow;
 }
 
 @media (min-width: 601px) {
-  #menu {
-    width: 500px;
-  }
+	#menu {
+		width: 500px;
+		margin-left: calc(calc(100% - 500px) / 2);
+	}
 }
 
 /*
 ___________________________________________
-          STILE PER I BANNER
+					STILE PER I BANNER
 ___________________________________________
 */
 
 /*Immagini Banner (Logo. Full height)*/
 .bgimg-banner {
-  background-image: url('/img/Banner.jpg');
-  min-height: 65%;
-  background-position: center;
-  background-size: cover;
+	background-image: url("/img/Banner.jpg");
+	min-height: 65%;
+	background-position: center;
+	background-size: cover;
 }
 
 .bgimg-VocaboLorro {
-  background-image: url('/img/LorrOcchi.gif');
-  min-height: 65%;
-  background-position: center;
-  background-size: cover;
+	background-image: url("/img/LorrOcchi.gif");
+	min-height: 65%;
+	background-position: center;
+	background-size: cover;
 }
 
 .bgimg-DiSionario {
-  background-image: url('/img/sio_hi.gif');
-  min-height: 65%;
-  background-position: center;
-  background-size: cover;
+	background-image: url("/img/sio_hi.gif");
+	min-height: 65%;
+	background-position: center;
+	background-size: cover;
 }
 
 .bgimg-Nickzionario {
-  background-image: url('/img/NickEsce.gif');
-  min-height: 65%;
-  background-position: center;
-  background-size: cover;
+	background-image: url("/img/NickEsce.gif");
+	min-height: 65%;
+	background-position: center;
+	background-size: cover;
 }
 
 .bgimg-TheZionario {
-  background-image: url('/img/calzone.jpg');
-  min-height: 65%;
-  background-position: center;
-  background-size: cover;
+	background-image: url("/img/calzone.jpg");
+	min-height: 65%;
+	background-position: center;
+	background-size: cover;
 }
 
 /*Testo in posizione centrale sulle immagini*/
 .centeredImage {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 /*Immagine laterale per i credits*/
 .sideImage {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("/img/VerticalPizza.jpg");
-  min-height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("/img/VerticalPizza.jpg");
+	min-height: 100%;
 }
 
 /*
 ___________________________________________
-      Stile nella pagina Pizzaquotes
+			Stile nella pagina Pizzaquotes
 ___________________________________________
 */
 
 .bgimg-Nickquotes {
-  background-image: url('../img/Candela.jpg');
-  min-height: 65%;
-  background-position: center;
-  background-size: cover;
+	background-image: url("../img/Candela.jpg");
+	min-height: 65%;
+	background-position: center;
+	background-size: cover;
 }
 
 .stileNickquotes {
-  font-family: 'Brush Script MT', cursive;
-  letter-spacing: 10px;
-  font-size: 35px;
+	font-family: "Brush Script MT", cursive;
+	letter-spacing: 10px;
+	font-size: 35px;
 }
 
-.coloresfondo{
-  background: #1D1F20;
+.coloresfondo {
+	background: #1d1f20;
 }
 
 /*
 ___________________________________________
-		    Stile per l'alfabeto
+				Stile per l'alfabeto
 ___________________________________________
 */
 
-.table-of-contents a{
-	font-weight:auto;
-	color:#757575;
-	line-height: 50%;
+.table-of-contents a {
+	font-weight: auto;
+	color: #757575;
+	/* line-height: 50%; */
+	text-align: center;
+	padding-left: 0 !important;
 }
 
-.table-of-contents a:hover{
-	padding-left:15px;
+.table-of-contents a:hover {
 	border-left: none;
-	background-color: #ccffcc;
+	opacity: 0.5;
+}
+
+.table-of-contents a:hover:not([disabled]):not(:disabled) {
+	background-color: #cfc;
+}
+
+.table-of-contents a[disabled],
+.table-of-contents a:disabled {
+	color: #bbb;
+	font-size: smaller;
+	font-style: italic;
+	text-transform: lowercase;
+}
+
+.table-of-contents a[disabled]:hover,
+.table-of-contents a:hover:disabled {
+	background-color: #555;
+	color: white;
 }
 
 /*
 ___________________________________________
-    Stile per il bottone dei credits
-              nel footer
+		Stile per il bottone dei credits
+							nel footer
 ___________________________________________
 */
 .glow-on-hover {
-    border: none;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
 }
 
 .glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+	content: "";
+	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background-size: 400%;
+	z-index: -1;
+	filter: blur(5px);
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	animation: glowing 20s linear infinite;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	border-radius: 10px;
 }
 
 .glow-on-hover:active:after {
-    background: transparent;
+	background: transparent;
 }
 
 .glow-on-hover:hover:before {
-    opacity: 1;
+	opacity: 1;
 }
 
 .glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+	z-index: -1;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
 }

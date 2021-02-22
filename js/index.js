@@ -53,7 +53,7 @@ async function renderList(container, toc, url) {
     }, {});
     container.innerHTML = '';
     toc.innerHTML = '';
-    toc.appendChild(window.jsx.createElement("div", { class: 'w3-row' }, Object.keys(letters).map(l => window.jsx.createElement("a", { class: 'w3-col s2 m1', href: `#letter-${l}` }, l.toUpperCase()))));
+    toc.appendChild(window.jsx.createElement("div", { class: 'w3-row table-of-contents' }, [...'#abcdefghijklmnopqrstuvwxyz'].map(l => window.jsx.createElement("a", Object.assign({ class: 'w3-col s2 m1' }, (Object.keys(letters).includes(l) ? { href: `#letter-${l}` } : { disabled: 'disabled' })), l.toUpperCase()))));
     container.appendChild(window.jsx.createElement("table", null, Object.keys(letters).map(letter => window.jsx.createElement("tbody", null,
         window.jsx.createElement("tr", { id: `letter-${letter}` },
             window.jsx.createElement("th", { colspan: '3' },
