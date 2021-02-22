@@ -1,4 +1,5 @@
 
+/*
 // Importa il Nickzionario
 window.addEventListener('load', function(){
 	// Compile the Handlebars template for HR leaders.
@@ -51,6 +52,7 @@ window.addEventListener('load', function(){
 		rowTemplate: HRTemplate,
 	});
 });
+*/
 
 // Importa le Pizzaquotes
 window.addEventListener('load', function(){

@@ -1,5 +1,9 @@
 declare global {
-	interface JSX {
-		createElement(...args: any[]): any
+	interface Window {
+		jsx: {
+			createElement(...args: any[]): any
+		}
 	}
 }
+
+export { }

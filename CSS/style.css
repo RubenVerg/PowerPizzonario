@@ -38,6 +38,13 @@ a:hover{
 .testoFooter:hover{
   color: yellow;
 }
+
+@media (min-width: 601px) {
+  #menu {
+    width: 500px;
+  }
+}
+
 /*
 ___________________________________________
           STILE PER I BANNER
@@ -46,35 +53,35 @@ ___________________________________________
 
 /*Immagini Banner (Logo. Full height)*/
 .bgimg-banner {
-  background-image: url('../Immagini/Banner.jpg');
+  background-image: url('/img/Banner.jpg');
   min-height: 65%;
   background-position: center;
   background-size: cover;
 }
 
 .bgimg-VocaboLorro {
-  background-image: url('../Immagini/LorrOcchi.gif');
+  background-image: url('/img/LorrOcchi.gif');
   min-height: 65%;
   background-position: center;
   background-size: cover;
 }
 
 .bgimg-DiSionario {
-  background-image: url('../Immagini/sio_hi.gif');
+  background-image: url('/img/sio_hi.gif');
   min-height: 65%;
   background-position: center;
   background-size: cover;
 }
 
 .bgimg-Nickzionario {
-  background-image: url('../Immagini/NickEsce.gif');
+  background-image: url('/img/NickEsce.gif');
   min-height: 65%;
   background-position: center;
   background-size: cover;
 }
 
 .bgimg-TheZionario {
-  background-image: url('../Immagini/calzone.jpg');
+  background-image: url('/img/calzone.jpg');
   min-height: 65%;
   background-position: center;
   background-size: cover;
@@ -93,7 +100,7 @@ ___________________________________________
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../Immagini/VerticalPizza.jpg");
+  background-image: url("/img/VerticalPizza.jpg");
   min-height: 100%;
 }
 

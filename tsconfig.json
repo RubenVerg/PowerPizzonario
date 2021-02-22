@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"target": "es2018",
+		"lib": [
+			"es2018",
+			"dom",
+			"dom.iterable"
+		],
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"jsx": "react",
+		"jsxFactory": "window.jsx.createElement",
+		"rootDir": "jsx",
+		"outDir": "js",
+		"allowJs": true
+	},
+	"include": [
+		"jsx/**/*"
+	]
+}
